@@ -1,0 +1,24 @@
+/* generali */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* debug */
+[class*="col-"] {
+    background-color: red;
+    border: 2px solid black;
+    height: 100px;
+}
+
+.jumbotron {
+    background-color: green;
+    height: 400px;
+}
+
+section {
+    /* debug */
+    margin: 30px 0;
+}
