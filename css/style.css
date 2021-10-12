@@ -6,13 +6,19 @@
     box-sizing: border-box;
 }
 
+.cf::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* debug */
 /* [class*="col"] {
     background-color: red;
     border: 2px solid black;
     min-height: 100px;
-}
- */
+} */
+
 
 
 /* header */
@@ -42,9 +48,9 @@ header {
     margin: 50px 0 10px 0;
 }
 
-.start-bootstrap h1 {
+h2 {
     font-size: 65px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .star-lines {
@@ -76,6 +82,74 @@ header {
 
 
 
+/* main */
+
+/* portfolio */
+
+#portfolio {
+    margin-bottom: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.star-lines {
+    display: flex;
+    justify-content: center;
+}
+
+#portfolio .line {
+    background-color: black;
+}
+
+#portfolio .contenuto {
+    margin: 10px 0;
+}
+
+#portfolio .contenuto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+/* about */
+
+#about {
+    background-color: #1abc9c;
+    color: white;
+}
+
+#about h2 {
+    padding-top: 70px;
+}
+
+#about .text {
+    width: 50%;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+#about .download {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#about .download a {
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+    padding: 13px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#about .download .fas {
+    margin-right: 10px;
+}
 
 
 
@@ -96,24 +170,29 @@ header {
 
 @media all and (max-width: 767px) {
     
-    .start-bootstrap h1 {
-        font-size: 40px;
+    h2 {
+        font-size: 30px;
+    }
+
+    .star-lines {
+        margin: 10px 0;
     }
 
     .line {
-        width: 85px;
+        width: 70px;
     }
 
     .star {
-        margin: 0 15px;
+        margin: 0 14px;
     }
 
     .start-bootstrap .spec {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .start-bootstrap .spec span {
-        font-size: 20px;
+        font-size: 15px;
+        font-weight: bold;
     }
-    
+
 }
